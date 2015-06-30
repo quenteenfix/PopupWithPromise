@@ -70,14 +70,14 @@
                         });
                         
   config配置为：
-        var config = {
-            title: '',
-            notice : '',
-            button : popup_button,
-            height : 360,
-            width : 260,
-            top : 50,
-            is_bg_close : false,// 是否点击浮层后关闭弹出框：true-关闭 false-不关闭
-            is_border : false,// 是否有边框
-            callback: {}//回调函数
-        };
+						var config = {
+							title: '',
+							notice : '',
+							button : popup_button,
+							height : 360,
+							width : 260,
+							top : 50,
+							is_bg_close : false,// 是否点击浮层后关闭弹出框：true-关闭 false-不关闭
+							is_border : false,// 是否有边框
+							callback: {}//回调函数
+						};
