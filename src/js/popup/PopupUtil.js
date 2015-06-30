@@ -86,6 +86,11 @@ define(function(require, exports, module) {
             });
         }
 
+        // 支持callback - 比如设置按钮的文本，当然，你可以做的还有很多
+        if (typeof (config['callback']) === 'function') {
+            config['callback']();
+        }
+
         // 保证职责的单一性，只做应该做的事情，其它的控制交给外围的逻辑去管理
 
         return {
@@ -187,6 +192,11 @@ define(function(require, exports, module) {
             pop.fadeOut(300, function(){
                 pop.remove();
             });
+        }
+
+        // 支持callback - 比如设置按钮的文本，当然，你可以做的还有很多
+        if (typeof (config['callback']) === 'function') {
+            config['callback']();
         }
 
         // 保证职责的单一性，只做应该做的事情，其它的控制交给外围的逻辑去管理
